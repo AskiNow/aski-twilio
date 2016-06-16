@@ -10,8 +10,8 @@ group :development do
   gem 'sqlite3'
 end
 group :production do
-  gem 'pg', '0.15.1'
-  gem 'rails_12factor', '0.0.2'
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 # Use SCSS for stylesheets
@@ -40,6 +40,9 @@ end
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+group :production do
+  gem 'puma'
+end
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
